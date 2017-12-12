@@ -94,4 +94,21 @@ $(document).ready(function () {
             }
         });
 
+        // Maps
+        var map = new GMaps({
+            div: '.map',
+            lat: 40.742823,
+            lng: -73.9894678,
+            zoom: 12
+        });
+
+        map.addMarker({
+            lat: 40.742823,
+            lng: -73.9894678,
+            title: 'New York City',
+            infoWindow: {
+                content: '<p>Our NYC Headquarters</p>'
+            }
+        });
+
 });
